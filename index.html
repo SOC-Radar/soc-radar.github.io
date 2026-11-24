@@ -1,110 +1,807 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>SOCRADAR CURIOSITY WIDE SCAN PROJECT</title>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/minimalism-dark.css?g=1575558654742">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="Why SOCRadar scanners appear in your logs, how to be excluded, and the current list of scanner IP addresses.">
+<meta name="color-scheme" content="light dark">
+<title>SOCRadar Curiosity Wide Scan Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body> 
-    <div id="mainContainer">
-        <div id="mainContentBlock">
-            <div id="mainContent">
-                
-                <div id="avatarImage" style="background-image: url('avatar1.png'); background-size:500px;">
-                </div>
-                
-                <div id="introBox">
-                    <h1>SOCRADAR CURIOSITY WIDE SCAN PROJECT</h1>
-                </div>
+<body>
+<header class="s-header">
+  <!-- logo slot: replace the text wordmark with the SOCRadar logo asset (100 wide, as in the navigation bar) -->
+  <a class="wordmark" href="https://socradar.io" rel="noopener">SOCRadar</a>
+  <span class="sep" aria-hidden="true"></span>
+  <span class="header-title">Curiosity Wide Scan Project</span>
+  <span class="header-spacer"></span>
+  <button type="button" class="theme-btn" id="theme-toggle" aria-label="Switch between light and dark theme" title="Light / dark theme">
+    <svg class="ico-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+    <svg class="ico-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+  </button>
+</header>
 
-                
-                <div id="fullBioBox">
-                    <p>SOCRadar Attack Surface Management Platform</p>
-<p>SOCRadar delivers an intelligent extended threat intelligence platform for organizations against sophisticated cyber attacks. Its portfolio of digital assets and perimeter monitoring platforms hardened with targeted cyber threat intelligence &#x2013; all automated and supported by a global team of qualified intelligence analysts &#x2013; provides unparalleled visibility, management, and protection of digital risks.</p>
-<p>Prioritized, up-to-date, and relevant cyber threat intelligence insights empower customers to take action starting from the reconnaissance stage of the Cyber Kill Chain. Our customers worldwide leverage our 15+ years of expertise and investment in scalable, innovative solutions to protect their most valuable assets &#x2013; brand reputation, employees, customers, networks, and operational facilities.</p>
-<p>SOCRadar discovers all digital assets of the companies automatically and tracks changes of those 7x24x365 with flexible alarm and notification mechanism. SOCRadar false-positive alarm ration is redacted with machine learning algorithms and provides cyber threat intelligence. </p>
-<p>SOCRadar CURIOSITY Wide Scan project is a subproject inside of our platform. We are constantly looking for open ports and banners of our customers&#x27; external ip addresses to generate alarms for any potential misconfiguration. </p>
-<p>Our carefully designed system send TCP SYN packets in a very low rate (lower than 0.1 Mbps) and scans are distributed and randomized over the time to prevent any load on the destination ip addresses.</p>
-<p>Q: How to be excluded from our scans?</p>
-<p>A: Send an email to noscan [@] socradar[.]io requesting to be excluded and including your information.</p>
-<p>Q: How to block our scanners?</p>
-<p>A: A list of our Port scanners; IP addresses are:</p>
-<ul>
-<li>139.162.225.221</li>
-<li>172.105.9.235</li>
-<li>45.79.44.78</li>
-<li>172.104.75.183</li>
-<li>172.105.58.98</li>
-<li>45.79.173.230</li>
-<li>172.105.78.101</li>
-<li>172.233.111.227</li>
-<li>172.105.73.148</li>
-<li>172.233.26.186</li>
-<li>194.195.252.210</li>
-<li>172.232.221.148</li>
-<li>45.79.190.133</li>
-<li>192.53.121.87</li>
-<li>172.105.56.8</li>
-<li>172.232.160.26</li>
-<li>172.233.117.214</li>
-<li>172.233.62.80</li>
-</ul>   
-<p>A list of our Network Vulnerability scanners' IP addresses are:</p>     
-<ul>
-    <li>185.198.199.82</li>
-    <li>85.90.244.133</li>
-    <li>143.42.19.122</li>
-    <li>172.235.175.29</li>
-    <li>172.235.181.209</li>
-    <li>155.212.100.245</li>
-    <li>154.218.25.95</li>
-    <li>158.115.254.246</li>
-    <li>158.115.254.48</li>
-    <li>158.115.254.77</li>
-    <li>154.29.20.81</li>
-    <li>204.217.134.205</li>
-    <li>154.13.210.134</li>
-    <li>154.13.210.149</li>
-    <li>45.73.183.134</li>
-    <li>67.203.32.124</li>
-    <li>107.175.154.72</li>
-    <li>23.95.212.175</li>
-    <li>23.95.212.44</li>
-    <li>78.218.130.65</li>
-    <li>185.171.30.127</li>
-    <li>188.74.246.6</li>
-    <li>172.102.203.12</li>
-    <li>172.102.203.219</li>
-    <li>93.152.37.73</li>
-    <li>108.165.136.196</li>
-    <li>108.165.251.251</li>
-    <li>158.140.196.1</li>
-    <li>158.140.196.2</li>
-    <li>158.140.196.3</li>
-    <li>203.160.127.6</li>
-    <li>203.160.127.7</li>
-    <li>103.117.92.21</li>
-    <li>103.117.93.3</li>
-    <li>82.23.25.123</li>
-    <li>82.23.28.117</li>
-    <li>64.105.88.104</li>
-    <li>64.105.88.105</li>
-</ul>
-<p>You can block access from these addresses on your own machines, while keeping in mind that these addresses are updated rotated periodically.</p>
+<main class="s-page">
+  <div class="page-title">
+    <h1>SOCRadar Curiosity Wide Scan Project</h1>
+    <p>Port and service scanning by the SOCRadar Attack Surface Management Platform</p>
+  </div>
 
-                </div>
-                
-            </div>
-        </div>
-        <footer>
-            <div class="footer">
-                <p>&copy; SOCRADAR CURIOSITY WIDE SCAN PROJECT
-                </p>
-            </div>
-        </footer>
+  <section class="widget" id="project" aria-labelledby="h-project">
+    <div class="widget-head"><h2 class="widget-title" id="h-project">What is the Curiosity Wide Scan Project?</h2></div>
+    <div class="widget-body">
+      <p>Curiosity Wide Scan is the scanning subproject of the SOCRadar platform. It continuously looks for open ports and service banners on our customers’ external IP addresses. When a scan finds an unexpected open port, an exposed service or a likely misconfiguration, the platform raises an alarm so the customer can fix it before an attacker finds it.</p>
+      <p>Two groups of scanners take part in the project:</p>
+      <div class="table-wrap "><table>
+<thead><tr>
+<th scope="col">Scanner group</th>
+<th scope="col">What it does</th>
+</tr></thead><tbody>
+<tr><th scope="row">Port scanners</th><td>Send TCP SYN probes to discover open ports and collect service banners.</td></tr>
+<tr><th scope="row">Network vulnerability scanners</th><td>Check the services found on open ports for known vulnerabilities and misconfigurations.</td></tr>
+</tbody></table></div>
+      <p>The IP addresses of both groups are <a href="#scanner-ips">listed at the bottom of this page</a>.</p>
     </div>
+  </section>
+
+  <section class="widget" id="how-we-scan" aria-labelledby="h-how">
+    <div class="widget-head"><h2 class="widget-title" id="h-how">How we scan</h2></div>
+    <div class="widget-body">
+      <p>The scanning system is built to go unnoticed by the hosts it probes:</p>
+      <ul class="box-list cols-2">
+        <li class="box"><p><strong>Low rate.</strong> Port discovery uses TCP SYN packets sent at well under 0.1 Mbps.</p></li>
+<li class="box"><p><strong>Distributed.</strong> Scans are spread across the scanner addresses listed below rather than sent from a single source.</p></li>
+<li class="box"><p><strong>Randomized over time.</strong> Probes are spread out in time rather than sent in bursts.</p></li>
+<li class="box"><p><strong>No load by design.</strong> Together these measures keep the scans from placing any load on the destination addresses.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="widget" id="faq" aria-labelledby="h-faq">
+    <div class="widget-head"><h2 class="widget-title" id="h-faq">Frequently asked questions</h2></div>
+    <div class="widget-body">
+      <div class="faq-list">
+        <div class="faq-item"><h3 class="faq-q">Why do I see connections from SOCRadar addresses in my logs?</h3><p>One of our scanners probed your IP address as part of the Curiosity Wide Scan Project. The scan looks for open ports, service banners and potential misconfigurations, at the low, randomized rate described above. If your organization is a SOCRadar customer, any finding appears as an alarm in your platform.</p></div>
+<div class="faq-item"><h3 class="faq-q">Is the scanning harmful or disruptive?</h3><p>It is designed not to be. Probes stay below 0.1 Mbps and are distributed across addresses and randomized over time, so they place no load on your hosts.</p></div>
+<div class="faq-item"><h3 class="faq-q">How can I be excluded from the scans?</h3><p>Email <a href="mailto:noscan@socradar.io">noscan@socradar.io</a> and ask to be excluded. Include your organization name, the IP addresses or ranges to exclude and a contact person so we can confirm the request.</p></div>
+<div class="faq-item"><h3 class="faq-q">How can I whitelist the scanners?</h3><p>Add the IP addresses <a href="#scanner-ips">listed in the next section</a> to the whitelist (allow list) of your firewall, IDS/IPS and WAF. This lets our scans complete, so the findings reflect your real exposure instead of what your perimeter happens to let through. If a new address is added to the list or an existing one changes, a notification is issued through the SOCRadar platform and this page is revised accordingly.</p></div>
+<div class="faq-item"><h3 class="faq-q">Who can I contact with questions?</h3><p>Write to <a href="mailto:noscan@socradar.io">noscan@socradar.io</a>.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="widget" id="scanner-ips" aria-labelledby="h-ips">
+    <div class="widget-head">
+      <div>
+        <h2 class="widget-title" id="h-ips">Scanner IP addresses</h2>
+        <p class="widget-sub">Last updated: 2026-11-24</p>
+      </div>
+    </div>
+    <div class="widget-body">
+      <p>Scanning traffic for the project originates from the addresses below, grouped by scanner group and, within each group, by country. If a new address is added to the list or an existing one changes, a notification is issued through the SOCRadar platform and this page is revised accordingly.</p>
+      <div class="lookup">
+  <label class="visually-hidden" for="ip-lookup">Check an IP address, or filter the lists by country or city</label>
+  <div class="search-bar">
+    <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 20 20"/></svg>
+    <input id="ip-lookup" type="search" placeholder="Check an IP address, or filter by country or city" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
+    <button type="button" class="btn btn-outline" id="lookup-clear" hidden>Clear</button>
+  </div>
+  <p class="lookup-result" id="lookup-result" hidden aria-live="polite"></p>
+</div>
+      <div class="card-stack">
+        <article class="card" id="group-1" data-group="Port scanners">
+<div class="card-head">
+<h3 class="card-title">Port scanners (18 addresses)</h3>
+<div class="card-actions">
+<button type="button" class="btn btn-outline" data-expand-all="group-1" aria-expanded="true">Collapse all</button>
+<button type="button" class="btn btn-outline" data-copy="group-1" aria-label="Copy all 18 addresses in this list">Copy list</button>
+</div>
+</div>
+<div class="card-body">
+<div class="country-grid">
+<section class="acc" id="group-1-c1" data-country="Australia">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-1-c1-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Australia</span><span class="acc-count" data-total="1">1</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-1-c1" aria-label="Copy the 1 addresses for Australia">Copy list</button>
+</div>
+<div class="acc-body" id="group-1-c1-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="194.195.252.210" data-city="Sydney"><td class="ip">194.195.252.210</td><td>Sydney</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-1-c2" data-country="Brazil">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-1-c2-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Brazil</span><span class="acc-count" data-total="1">1</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-1-c2" aria-label="Copy the 1 addresses for Brazil">Copy list</button>
+</div>
+<div class="acc-body" id="group-1-c2-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="172.233.26.186" data-city="São Paulo"><td class="ip">172.233.26.186</td><td>São Paulo</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-1-c3" data-country="Canada">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-1-c3-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Canada</span><span class="acc-count" data-total="2">2</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-1-c3" aria-label="Copy the 2 addresses for Canada">Copy list</button>
+</div>
+<div class="acc-body" id="group-1-c3-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="172.105.9.235" data-city="Toronto, ON"><td class="ip">172.105.9.235</td><td>Toronto, ON</td></tr>
+<tr data-ip="192.53.121.87" data-city="Toronto, ON"><td class="ip">192.53.121.87</td><td>Toronto, ON</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-1-c4" data-country="Germany">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-1-c4-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Germany</span><span class="acc-count" data-total="2">2</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-1-c4" aria-label="Copy the 2 addresses for Germany">Copy list</button>
+</div>
+<div class="acc-body" id="group-1-c4-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="172.105.73.148" data-city="Frankfurt"><td class="ip">172.105.73.148</td><td>Frankfurt</td></tr>
+<tr data-ip="172.105.78.101" data-city="Frankfurt"><td class="ip">172.105.78.101</td><td>Frankfurt</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-1-c5" data-country="India">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-1-c5-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">India</span><span class="acc-count" data-total="2">2</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-1-c5" aria-label="Copy the 2 addresses for India">Copy list</button>
+</div>
+<div class="acc-body" id="group-1-c5-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="172.105.56.8" data-city="Mumbai"><td class="ip">172.105.56.8</td><td>Mumbai</td></tr>
+<tr data-ip="172.105.58.98" data-city="Mumbai"><td class="ip">172.105.58.98</td><td>Mumbai</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-1-c6" data-country="Italy">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-1-c6-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Italy</span><span class="acc-count" data-total="1">1</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-1-c6" aria-label="Copy the 1 addresses for Italy">Copy list</button>
+</div>
+<div class="acc-body" id="group-1-c6-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="172.232.221.148" data-city="Milan"><td class="ip">172.232.221.148</td><td>Milan</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-1-c7" data-country="Japan">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-1-c7-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Japan</span><span class="acc-count" data-total="1">1</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-1-c7" aria-label="Copy the 1 addresses for Japan">Copy list</button>
+</div>
+<div class="acc-body" id="group-1-c7-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="172.104.75.183" data-city="Tokyo"><td class="ip">172.104.75.183</td><td>Tokyo</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-1-c8" data-country="Netherlands">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-1-c8-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Netherlands</span><span class="acc-count" data-total="1">1</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-1-c8" aria-label="Copy the 1 addresses for Netherlands">Copy list</button>
+</div>
+<div class="acc-body" id="group-1-c8-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="172.233.62.80" data-city="Amsterdam"><td class="ip">172.233.62.80</td><td>Amsterdam</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-1-c9" data-country="Spain">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-1-c9-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Spain</span><span class="acc-count" data-total="2">2</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-1-c9" aria-label="Copy the 2 addresses for Spain">Copy list</button>
+</div>
+<div class="acc-body" id="group-1-c9-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="172.233.111.227" data-city="Madrid"><td class="ip">172.233.111.227</td><td>Madrid</td></tr>
+<tr data-ip="172.233.117.214" data-city="Madrid"><td class="ip">172.233.117.214</td><td>Madrid</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-1-c10" data-country="United Kingdom">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-1-c10-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">United Kingdom</span><span class="acc-count" data-total="1">1</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-1-c10" aria-label="Copy the 1 addresses for United Kingdom">Copy list</button>
+</div>
+<div class="acc-body" id="group-1-c10-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="139.162.225.221" data-city="London"><td class="ip">139.162.225.221</td><td>London</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-1-c11" data-country="United States">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-1-c11-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">United States</span><span class="acc-count" data-total="4">4</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-1-c11" aria-label="Copy the 4 addresses for United States">Copy list</button>
+</div>
+<div class="acc-body" id="group-1-c11-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="45.79.173.230" data-city="Cedar Knolls, NJ"><td class="ip">45.79.173.230</td><td>Cedar Knolls, NJ</td></tr>
+<tr data-ip="45.79.190.133" data-city="Cedar Knolls, NJ"><td class="ip">45.79.190.133</td><td>Cedar Knolls, NJ</td></tr>
+<tr data-ip="45.79.44.78" data-city="Richardson, TX"><td class="ip">45.79.44.78</td><td>Richardson, TX</td></tr>
+<tr data-ip="172.232.160.26" data-city="Tukwila, WA"><td class="ip">172.232.160.26</td><td>Tukwila, WA</td></tr>
+</tbody></table></div>
+</div>
+</section>
+</div>
+<div class="no-results" id="group-1-empty" hidden><svg class="no-results-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 20 20M8 10.5h5"/></svg><p>No addresses in this list match your search.</p></div>
+</div>
+</article>
+        <article class="card" id="group-2" data-group="Network vulnerability scanners">
+<div class="card-head">
+<h3 class="card-title">Network vulnerability scanners (130 addresses)</h3>
+<div class="card-actions">
+<button type="button" class="btn btn-outline" data-expand-all="group-2" aria-expanded="true">Collapse all</button>
+<button type="button" class="btn btn-outline" data-copy="group-2" aria-label="Copy all 130 addresses in this list">Copy list</button>
+</div>
+</div>
+<div class="card-body">
+<div class="country-grid">
+<section class="acc" id="group-2-c1" data-country="Argentina">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c1-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Argentina</span><span class="acc-count" data-total="5">5</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c1" aria-label="Copy the 5 addresses for Argentina">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c1-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="204.52.101.37" data-city="Buenos Aires"><td class="ip">204.52.101.37</td><td>Buenos Aires</td></tr>
+<tr data-ip="204.52.101.128" data-city="Buenos Aires"><td class="ip">204.52.101.128</td><td>Buenos Aires</td></tr>
+<tr data-ip="204.52.102.65" data-city="Buenos Aires"><td class="ip">204.52.102.65</td><td>Buenos Aires</td></tr>
+<tr data-ip="204.52.102.138" data-city="Buenos Aires"><td class="ip">204.52.102.138</td><td>Buenos Aires</td></tr>
+<tr data-ip="204.52.102.148" data-city="Buenos Aires"><td class="ip">204.52.102.148</td><td>Buenos Aires</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c2" data-country="Australia">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c2-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Australia</span><span class="acc-count" data-total="6">6</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c2" aria-label="Copy the 6 addresses for Australia">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c2-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="116.206.99.106" data-city="Sydney"><td class="ip">116.206.99.106</td><td>Sydney</td></tr>
+<tr data-ip="137.59.60.155" data-city="Sydney"><td class="ip">137.59.60.155</td><td>Sydney</td></tr>
+<tr data-ip="137.59.61.7" data-city="Sydney"><td class="ip">137.59.61.7</td><td>Sydney</td></tr>
+<tr data-ip="137.59.61.232" data-city="Sydney"><td class="ip">137.59.61.232</td><td>Sydney</td></tr>
+<tr data-ip="137.59.63.106" data-city="Sydney"><td class="ip">137.59.63.106</td><td>Sydney</td></tr>
+<tr data-ip="137.59.63.212" data-city="Sydney"><td class="ip">137.59.63.212</td><td>Sydney</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c3" data-country="Austria">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c3-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Austria</span><span class="acc-count" data-total="5">5</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c3" aria-label="Copy the 5 addresses for Austria">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c3-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="104.253.196.28" data-city="Vienna"><td class="ip">104.253.196.28</td><td>Vienna</td></tr>
+<tr data-ip="104.253.196.52" data-city="Vienna"><td class="ip">104.253.196.52</td><td>Vienna</td></tr>
+<tr data-ip="104.253.196.126" data-city="Vienna"><td class="ip">104.253.196.126</td><td>Vienna</td></tr>
+<tr data-ip="104.253.196.144" data-city="Vienna"><td class="ip">104.253.196.144</td><td>Vienna</td></tr>
+<tr data-ip="104.253.196.216" data-city="Vienna"><td class="ip">104.253.196.216</td><td>Vienna</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c4" data-country="Bangladesh">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c4-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Bangladesh</span><span class="acc-count" data-total="1">1</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c4" aria-label="Copy the 1 addresses for Bangladesh">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c4-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="155.212.100.245" data-city="Bajania, Rangpur Division"><td class="ip">155.212.100.245</td><td>Bajania, Rangpur Division</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c5" data-country="Belgium">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c5-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Belgium</span><span class="acc-count" data-total="2">2</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c5" aria-label="Copy the 2 addresses for Belgium">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c5-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="136.143.250.1" data-city="Brussels"><td class="ip">136.143.250.1</td><td>Brussels</td></tr>
+<tr data-ip="136.143.250.2" data-city="Brussels"><td class="ip">136.143.250.2</td><td>Brussels</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c6" data-country="Brazil">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c6-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Brazil</span><span class="acc-count" data-total="6">6</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c6" aria-label="Copy the 6 addresses for Brazil">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c6-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="23.26.137.62" data-city="Fortaleza"><td class="ip">23.26.137.62</td><td>Fortaleza</td></tr>
+<tr data-ip="50.114.105.8" data-city="Fortaleza"><td class="ip">50.114.105.8</td><td>Fortaleza</td></tr>
+<tr data-ip="50.114.105.248" data-city="Fortaleza"><td class="ip">50.114.105.248</td><td>Fortaleza</td></tr>
+<tr data-ip="108.165.136.196" data-city="Fortaleza"><td class="ip">108.165.136.196</td><td>Fortaleza</td></tr>
+<tr data-ip="108.165.251.251" data-city="Fortaleza"><td class="ip">108.165.251.251</td><td>Fortaleza</td></tr>
+<tr data-ip="93.152.37.73" data-city="São Paulo"><td class="ip">93.152.37.73</td><td>São Paulo</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c7" data-country="Canada">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c7-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Canada</span><span class="acc-count" data-total="6">6</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c7" aria-label="Copy the 6 addresses for Canada">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c7-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="109.174.184.15" data-city="Toronto, ON"><td class="ip">109.174.184.15</td><td>Toronto, ON</td></tr>
+<tr data-ip="109.174.185.179" data-city="Toronto, ON"><td class="ip">109.174.185.179</td><td>Toronto, ON</td></tr>
+<tr data-ip="109.174.186.187" data-city="Toronto, ON"><td class="ip">109.174.186.187</td><td>Toronto, ON</td></tr>
+<tr data-ip="109.174.187.101" data-city="Toronto, ON"><td class="ip">109.174.187.101</td><td>Toronto, ON</td></tr>
+<tr data-ip="154.13.210.134" data-city="Toronto, ON"><td class="ip">154.13.210.134</td><td>Toronto, ON</td></tr>
+<tr data-ip="154.13.210.149" data-city="Toronto, ON"><td class="ip">154.13.210.149</td><td>Toronto, ON</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c8" data-country="Colombia">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c8-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Colombia</span><span class="acc-count" data-total="1">1</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c8" aria-label="Copy the 1 addresses for Colombia">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c8-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="109.174.220.7" data-city="Bogotá"><td class="ip">109.174.220.7</td><td>Bogotá</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c9" data-country="Czechia">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c9-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Czechia</span><span class="acc-count" data-total="5">5</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c9" aria-label="Copy the 5 addresses for Czechia">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c9-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="135.196.185.77" data-city="Prague"><td class="ip">135.196.185.77</td><td>Prague</td></tr>
+<tr data-ip="135.196.185.78" data-city="Prague"><td class="ip">135.196.185.78</td><td>Prague</td></tr>
+<tr data-ip="135.196.185.81" data-city="Prague"><td class="ip">135.196.185.81</td><td>Prague</td></tr>
+<tr data-ip="135.196.185.216" data-city="Prague"><td class="ip">135.196.185.216</td><td>Prague</td></tr>
+<tr data-ip="135.196.185.250" data-city="Prague"><td class="ip">135.196.185.250</td><td>Prague</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c10" data-country="France">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c10-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">France</span><span class="acc-count" data-total="5">5</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c10" aria-label="Copy the 5 addresses for France">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c10-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="93.152.24.246" data-city="Paris"><td class="ip">93.152.24.246</td><td>Paris</td></tr>
+<tr data-ip="93.152.26.106" data-city="Paris"><td class="ip">93.152.26.106</td><td>Paris</td></tr>
+<tr data-ip="172.102.203.12" data-city="Paris"><td class="ip">172.102.203.12</td><td>Paris</td></tr>
+<tr data-ip="172.102.203.219" data-city="Paris"><td class="ip">172.102.203.219</td><td>Paris</td></tr>
+<tr data-ip="204.217.193.8" data-city="Paris"><td class="ip">204.217.193.8</td><td>Paris</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c11" data-country="Germany">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c11-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Germany</span><span class="acc-count" data-total="10">10</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c11" aria-label="Copy the 10 addresses for Germany">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c11-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="23.27.165.104" data-city="Frankfurt"><td class="ip">23.27.165.104</td><td>Frankfurt</td></tr>
+<tr data-ip="23.27.165.130" data-city="Frankfurt"><td class="ip">23.27.165.130</td><td>Frankfurt</td></tr>
+<tr data-ip="23.27.165.254" data-city="Frankfurt"><td class="ip">23.27.165.254</td><td>Frankfurt</td></tr>
+<tr data-ip="31.42.132.178" data-city="Frankfurt"><td class="ip">31.42.132.178</td><td>Frankfurt</td></tr>
+<tr data-ip="31.42.135.189" data-city="Frankfurt"><td class="ip">31.42.135.189</td><td>Frankfurt</td></tr>
+<tr data-ip="85.90.244.133" data-city="Frankfurt"><td class="ip">85.90.244.133</td><td>Frankfurt</td></tr>
+<tr data-ip="143.42.19.122" data-city="Frankfurt"><td class="ip">143.42.19.122</td><td>Frankfurt</td></tr>
+<tr data-ip="185.171.30.127" data-city="Frankfurt"><td class="ip">185.171.30.127</td><td>Frankfurt</td></tr>
+<tr data-ip="188.74.246.6" data-city="Frankfurt"><td class="ip">188.74.246.6</td><td>Frankfurt</td></tr>
+<tr data-ip="194.33.66.211" data-city="Frankfurt"><td class="ip">194.33.66.211</td><td>Frankfurt</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c12" data-country="Greece">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c12-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Greece</span><span class="acc-count" data-total="5">5</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c12" aria-label="Copy the 5 addresses for Greece">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c12-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="92.112.50.51" data-city="Thessaloníki"><td class="ip">92.112.50.51</td><td>Thessaloníki</td></tr>
+<tr data-ip="92.112.50.116" data-city="Thessaloníki"><td class="ip">92.112.50.116</td><td>Thessaloníki</td></tr>
+<tr data-ip="92.112.50.129" data-city="Thessaloníki"><td class="ip">92.112.50.129</td><td>Thessaloníki</td></tr>
+<tr data-ip="92.112.50.199" data-city="Thessaloníki"><td class="ip">92.112.50.199</td><td>Thessaloníki</td></tr>
+<tr data-ip="92.112.50.205" data-city="Thessaloníki"><td class="ip">92.112.50.205</td><td>Thessaloníki</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c13" data-country="India">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c13-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">India</span><span class="acc-count" data-total="2">2</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c13" aria-label="Copy the 2 addresses for India">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c13-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="103.117.92.21" data-city="Mumbai"><td class="ip">103.117.92.21</td><td>Mumbai</td></tr>
+<tr data-ip="103.117.93.3" data-city="Mumbai"><td class="ip">103.117.93.3</td><td>Mumbai</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c14" data-country="Ireland">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c14-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Ireland</span><span class="acc-count" data-total="5">5</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c14" aria-label="Copy the 5 addresses for Ireland">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c14-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="82.24.248.30" data-city="Dublin"><td class="ip">82.24.248.30</td><td>Dublin</td></tr>
+<tr data-ip="82.24.248.36" data-city="Dublin"><td class="ip">82.24.248.36</td><td>Dublin</td></tr>
+<tr data-ip="82.25.248.42" data-city="Dublin"><td class="ip">82.25.248.42</td><td>Dublin</td></tr>
+<tr data-ip="82.25.248.226" data-city="Dublin"><td class="ip">82.25.248.226</td><td>Dublin</td></tr>
+<tr data-ip="82.25.248.228" data-city="Dublin"><td class="ip">82.25.248.228</td><td>Dublin</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c15" data-country="Israel">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c15-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Israel</span><span class="acc-count" data-total="1">1</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c15" aria-label="Copy the 1 addresses for Israel">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c15-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="213.169.200.21" data-city="Tel Aviv"><td class="ip">213.169.200.21</td><td>Tel Aviv</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c16" data-country="Italy">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c16-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Italy</span><span class="acc-count" data-total="6">6</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c16" aria-label="Copy the 6 addresses for Italy">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c16-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="78.218.130.65" data-city="Milan"><td class="ip">78.218.130.65</td><td>Milan</td></tr>
+<tr data-ip="188.214.199.35" data-city="Milan"><td class="ip">188.214.199.35</td><td>Milan</td></tr>
+<tr data-ip="188.214.199.95" data-city="Milan"><td class="ip">188.214.199.95</td><td>Milan</td></tr>
+<tr data-ip="188.241.126.8" data-city="Milan"><td class="ip">188.241.126.8</td><td>Milan</td></tr>
+<tr data-ip="188.241.126.83" data-city="Milan"><td class="ip">188.241.126.83</td><td>Milan</td></tr>
+<tr data-ip="188.241.126.123" data-city="Milan"><td class="ip">188.241.126.123</td><td>Milan</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c17" data-country="Japan">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c17-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Japan</span><span class="acc-count" data-total="1">1</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c17" aria-label="Copy the 1 addresses for Japan">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c17-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="45.39.179.5" data-city="Hatsudai, Tokyo"><td class="ip">45.39.179.5</td><td>Hatsudai, Tokyo</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c18" data-country="Mexico">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c18-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Mexico</span><span class="acc-count" data-total="2">2</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c18" aria-label="Copy the 2 addresses for Mexico">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c18-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="104.252.249.59" data-city="Santiago de Querétaro"><td class="ip">104.252.249.59</td><td>Santiago de Querétaro</td></tr>
+<tr data-ip="104.252.253.86" data-city="Santiago de Querétaro"><td class="ip">104.252.253.86</td><td>Santiago de Querétaro</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c19" data-country="Netherlands">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c19-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Netherlands</span><span class="acc-count" data-total="7">7</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c19" aria-label="Copy the 7 addresses for Netherlands">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c19-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="158.115.254.48" data-city="Amsterdam"><td class="ip">158.115.254.48</td><td>Amsterdam</td></tr>
+<tr data-ip="158.115.254.77" data-city="Amsterdam"><td class="ip">158.115.254.77</td><td>Amsterdam</td></tr>
+<tr data-ip="158.115.254.246" data-city="Amsterdam"><td class="ip">158.115.254.246</td><td>Amsterdam</td></tr>
+<tr data-ip="158.140.211.56" data-city="Amsterdam"><td class="ip">158.140.211.56</td><td>Amsterdam</td></tr>
+<tr data-ip="158.140.211.102" data-city="Amsterdam"><td class="ip">158.140.211.102</td><td>Amsterdam</td></tr>
+<tr data-ip="172.235.175.29" data-city="Amsterdam"><td class="ip">172.235.175.29</td><td>Amsterdam</td></tr>
+<tr data-ip="172.235.181.209" data-city="Amsterdam"><td class="ip">172.235.181.209</td><td>Amsterdam</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c20" data-country="New Zealand">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c20-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">New Zealand</span><span class="acc-count" data-total="2">2</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c20" aria-label="Copy the 2 addresses for New Zealand">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c20-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="64.105.88.104" data-city="Auckland"><td class="ip">64.105.88.104</td><td>Auckland</td></tr>
+<tr data-ip="64.105.88.105" data-city="Auckland"><td class="ip">64.105.88.105</td><td>Auckland</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c21" data-country="Poland">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c21-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Poland</span><span class="acc-count" data-total="5">5</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c21" aria-label="Copy the 5 addresses for Poland">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c21-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="82.22.147.160" data-city="Warsaw"><td class="ip">82.22.147.160</td><td>Warsaw</td></tr>
+<tr data-ip="82.22.147.235" data-city="Warsaw"><td class="ip">82.22.147.235</td><td>Warsaw</td></tr>
+<tr data-ip="82.23.126.22" data-city="Warsaw"><td class="ip">82.23.126.22</td><td>Warsaw</td></tr>
+<tr data-ip="82.23.126.23" data-city="Warsaw"><td class="ip">82.23.126.23</td><td>Warsaw</td></tr>
+<tr data-ip="82.23.126.188" data-city="Warsaw"><td class="ip">82.23.126.188</td><td>Warsaw</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c22" data-country="Portugal">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c22-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Portugal</span><span class="acc-count" data-total="2">2</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c22" aria-label="Copy the 2 addresses for Portugal">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c22-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="209.242.208.1" data-city="Lisbon"><td class="ip">209.242.208.1</td><td>Lisbon</td></tr>
+<tr data-ip="209.242.208.2" data-city="Lisbon"><td class="ip">209.242.208.2</td><td>Lisbon</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c23" data-country="Singapore">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c23-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Singapore</span><span class="acc-count" data-total="2">2</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c23" aria-label="Copy the 2 addresses for Singapore">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c23-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="82.23.25.123" data-city="Singapore"><td class="ip">82.23.25.123</td><td>Singapore</td></tr>
+<tr data-ip="82.23.28.117" data-city="Singapore"><td class="ip">82.23.28.117</td><td>Singapore</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c24" data-country="Slovakia">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c24-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Slovakia</span><span class="acc-count" data-total="5">5</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c24" aria-label="Copy the 5 addresses for Slovakia">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c24-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="92.112.119.162" data-city="Bratislava"><td class="ip">92.112.119.162</td><td>Bratislava</td></tr>
+<tr data-ip="92.112.119.246" data-city="Bratislava"><td class="ip">92.112.119.246</td><td>Bratislava</td></tr>
+<tr data-ip="92.112.128.116" data-city="Bratislava"><td class="ip">92.112.128.116</td><td>Bratislava</td></tr>
+<tr data-ip="92.112.128.168" data-city="Bratislava"><td class="ip">92.112.128.168</td><td>Bratislava</td></tr>
+<tr data-ip="92.112.128.186" data-city="Bratislava"><td class="ip">92.112.128.186</td><td>Bratislava</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c25" data-country="Slovenia">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c25-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Slovenia</span><span class="acc-count" data-total="5">5</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c25" aria-label="Copy the 5 addresses for Slovenia">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c25-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="82.22.241.117" data-city="Ljubljana"><td class="ip">82.22.241.117</td><td>Ljubljana</td></tr>
+<tr data-ip="82.23.231.112" data-city="Ljubljana"><td class="ip">82.23.231.112</td><td>Ljubljana</td></tr>
+<tr data-ip="82.23.231.150" data-city="Ljubljana"><td class="ip">82.23.231.150</td><td>Ljubljana</td></tr>
+<tr data-ip="82.23.231.156" data-city="Ljubljana"><td class="ip">82.23.231.156</td><td>Ljubljana</td></tr>
+<tr data-ip="82.23.231.205" data-city="Ljubljana"><td class="ip">82.23.231.205</td><td>Ljubljana</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c26" data-country="Spain">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c26-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Spain</span><span class="acc-count" data-total="6">6</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c26" aria-label="Copy the 6 addresses for Spain">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c26-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="82.21.168.38" data-city="Madrid"><td class="ip">82.21.168.38</td><td>Madrid</td></tr>
+<tr data-ip="82.21.168.241" data-city="Madrid"><td class="ip">82.21.168.241</td><td>Madrid</td></tr>
+<tr data-ip="82.21.175.30" data-city="Madrid"><td class="ip">82.21.175.30</td><td>Madrid</td></tr>
+<tr data-ip="109.174.180.118" data-city="Madrid"><td class="ip">109.174.180.118</td><td>Madrid</td></tr>
+<tr data-ip="109.174.180.251" data-city="Madrid"><td class="ip">109.174.180.251</td><td>Madrid</td></tr>
+<tr data-ip="109.174.181.225" data-city="Madrid"><td class="ip">109.174.181.225</td><td>Madrid</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c27" data-country="Switzerland">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c27-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Switzerland</span><span class="acc-count" data-total="2">2</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c27" aria-label="Copy the 2 addresses for Switzerland">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c27-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="205.188.1.0" data-city="Lugano"><td class="ip">205.188.1.0</td><td>Lugano</td></tr>
+<tr data-ip="205.188.1.1" data-city="Lugano"><td class="ip">205.188.1.1</td><td>Lugano</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c28" data-country="Thailand">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c28-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Thailand</span><span class="acc-count" data-total="3">3</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c28" aria-label="Copy the 3 addresses for Thailand">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c28-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="152.163.110.1" data-city="Bangkok"><td class="ip">152.163.110.1</td><td>Bangkok</td></tr>
+<tr data-ip="152.163.110.2" data-city="Bangkok"><td class="ip">152.163.110.2</td><td>Bangkok</td></tr>
+<tr data-ip="152.163.110.3" data-city="Bangkok"><td class="ip">152.163.110.3</td><td>Bangkok</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c29" data-country="Türkiye">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c29-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">Türkiye</span><span class="acc-count" data-total="1">1</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c29" aria-label="Copy the 1 addresses for Türkiye">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c29-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="185.198.199.82" data-city="Istanbul"><td class="ip">185.198.199.82</td><td>Istanbul</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c30" data-country="United Arab Emirates">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c30-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">United Arab Emirates</span><span class="acc-count" data-total="5">5</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c30" aria-label="Copy the 5 addresses for United Arab Emirates">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c30-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="158.140.196.1" data-city="Dubai"><td class="ip">158.140.196.1</td><td>Dubai</td></tr>
+<tr data-ip="158.140.196.2" data-city="Dubai"><td class="ip">158.140.196.2</td><td>Dubai</td></tr>
+<tr data-ip="158.140.196.3" data-city="Dubai"><td class="ip">158.140.196.3</td><td>Dubai</td></tr>
+<tr data-ip="203.160.127.6" data-city="Dubai"><td class="ip">203.160.127.6</td><td>Dubai</td></tr>
+<tr data-ip="203.160.127.7" data-city="Dubai"><td class="ip">203.160.127.7</td><td>Dubai</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c31" data-country="United Kingdom">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c31-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">United Kingdom</span><span class="acc-count" data-total="6">6</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c31" aria-label="Copy the 6 addresses for United Kingdom">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c31-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="45.130.32.153" data-city="London"><td class="ip">45.130.32.153</td><td>London</td></tr>
+<tr data-ip="74.91.48.142" data-city="London"><td class="ip">74.91.48.142</td><td>London</td></tr>
+<tr data-ip="82.21.141.232" data-city="London"><td class="ip">82.21.141.232</td><td>London</td></tr>
+<tr data-ip="154.29.20.81" data-city="London"><td class="ip">154.29.20.81</td><td>London</td></tr>
+<tr data-ip="154.218.25.95" data-city="London"><td class="ip">154.218.25.95</td><td>London</td></tr>
+<tr data-ip="204.217.134.205" data-city="London"><td class="ip">204.217.134.205</td><td>London</td></tr>
+</tbody></table></div>
+</div>
+</section>
+<section class="acc" id="group-2-c32" data-country="United States">
+<div class="acc-head">
+<button type="button" class="acc-toggle" aria-expanded="true" aria-controls="group-2-c32-body"><svg class="acc-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><span class="acc-title">United States</span><span class="acc-count" data-total="5">5</span></button>
+<button type="button" class="btn btn-outline btn-small" data-copy="group-2-c32" aria-label="Copy the 5 addresses for United States">Copy list</button>
+</div>
+<div class="acc-body" id="group-2-c32-body">
+<div class="table-wrap"><table class="ip-table">
+<thead><tr><th scope="col">IP address</th><th scope="col">City</th></tr></thead>
+<tbody>
+<tr data-ip="23.95.212.44" data-city="Los Angeles, CA"><td class="ip">23.95.212.44</td><td>Los Angeles, CA</td></tr>
+<tr data-ip="23.95.212.175" data-city="Los Angeles, CA"><td class="ip">23.95.212.175</td><td>Los Angeles, CA</td></tr>
+<tr data-ip="45.73.183.134" data-city="Los Angeles, CA"><td class="ip">45.73.183.134</td><td>Los Angeles, CA</td></tr>
+<tr data-ip="67.203.32.124" data-city="Los Angeles, CA"><td class="ip">67.203.32.124</td><td>Los Angeles, CA</td></tr>
+<tr data-ip="107.175.154.72" data-city="Los Angeles, CA"><td class="ip">107.175.154.72</td><td>Los Angeles, CA</td></tr>
+</tbody></table></div>
+</div>
+</section>
+</div>
+<div class="no-results" id="group-2-empty" hidden><svg class="no-results-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 20 20M8 10.5h5"/></svg><p>No addresses in this list match your search.</p></div>
+</div>
+</article>
+      </div>
+    </div>
+  </section>
+
+  <section class="widget" id="contact" aria-labelledby="h-contact">
+    <div class="widget-head"><h2 class="widget-title" id="h-contact">Contact</h2></div>
+    <div class="widget-body">
+      <ul class="box-list cols-2">
+        <li class="box contact"><span class="box-label">Exclusion requests and questions</span><span class="box-value"><a href="mailto:noscan@socradar.io">noscan@socradar.io</a></span></li>
+<li class="box contact"><span class="box-label">Company website</span><span class="box-value"><a href="https://socradar.io" rel="noopener">https://socradar.io</a></span></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="s-footer">© 2026 SOCRadar · Curiosity Wide Scan Project</footer>
+<div class="visually-hidden" aria-live="polite" id="live"></div>
+<script src="app.js" defer></script>
 </body>
 </html>
-
-
